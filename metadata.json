@@ -1,0 +1,6 @@
+{
+  "name": "RigCraft: PC Hardware & Assembly Simulator",
+  "description": "An interactive video game and learning laboratory to assemble, disassemble, cable, classify input/output devices, diagnose hardware, and earn certificates and badges.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

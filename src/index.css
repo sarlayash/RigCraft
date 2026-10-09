@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-mono: 'Space Mono', monospace;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+  }
+}
+
+/* Custom crisp scrollbars for workshops */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #090d16;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
+
+/* Print styling for certificates */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #certificate-print-area, #certificate-print-area * {
+    visibility: visible;
+  }
+  #certificate-print-area {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+}
